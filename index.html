@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MSME ePortal - Unified Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #990000;
+    }
+    .step {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .step h2 {
+      color: #cc0000;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      background: #cc0000;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #a00000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>MSME ePortal - Unified Registration</h1>
+
+  <div class="step">
+    <h2>Step 1: SME Corporation Registration</h2>
+    <input type="text" placeholder="Full Name" />
+    <input type="email" placeholder="Email Address" />
+    <input type="text" placeholder="Phone Number" />
+    <input type="text" placeholder="Province / District" />
+    <select>
+      <option value="">Select MSME Type</option>
+      <option>Retail</option>
+      <option>Agro-Business</option>
+      <option>Services</option>
+      <option>Manufacturing</option>
+    </select>
+    <input type="text" placeholder="Create Username" />
+    <input type="password" placeholder="Create Password" />
+  </div>
+
+  <div class="step">
+    <h2>Step 2: IPA Business Registration</h2>
+    <input type="text" placeholder="Proposed Business Name" />
+    <select>
+      <option value="">Select Business Type</option>
+      <option>Sole Trader</option>
+      <option>Partnership</option>
+      <option>Company</option>
+    </select>
+    <input type="text" placeholder="Business Address" />
+    <label>Upload ID or Required Documents</label>
+    <input type="file" />
+  </div>
+
+  <div class="step">
+    <h2>Step 3: IRC - TIN Application</h2>
+    <select>
+      <option value="">Do you already have a TIN?</option>
+      <option>No, apply for TIN</option>
+      <option>Yes, I will link my TIN</option>
+    </select>
+    <input type="text" placeholder="Industry Sector" />
+    <input type="text" placeholder="Contact Person for Tax Office" />
+  </div>
+
+  <div class="step">
+    <h2>Step 4: Confirm & Submit</h2>
+    <textarea placeholder="Any other comments or information (optional)"></textarea>
+    <label><input type="checkbox" /> I confirm that the above information is true and accurate.</label><br><br>
+    <button class="btn">Submit Registration</button>
+  </div>
+
+</body>
+</html>
